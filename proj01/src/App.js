@@ -1,5 +1,5 @@
 import "./App.css";
-import React,{useState} from 'react';
+import React,{useState, useEffect} from 'react';
 import Corpo from '../src/componentes/Corpo';
 import Relogio from "./componentes/Relogio";
 import Numero from "./componentes/Numero";
@@ -9,7 +9,12 @@ function App() {
  const [num, setNum] = useState(10);
  const [ligado,setLigado] = useState(false);
  const [cor,setCor] = useState(1);
+ const [contagem, setContagem] = useState(0);
  
+ useEffect()(
+   () =>  console.log("Pagina carregada"),
+   document.title="Contagem" + contagem
+ );
 
  
 
@@ -79,6 +84,8 @@ return(
            <Corpo className="body"/>
     <p className="ben10"> Valor do state num em App:{num}</p>
        <Numero num={num} setNum={setNum}/>  
+       <p>Contagem{contagem}</p>
+       <button onClick={() => setContagem(contagem + 1)}>Contar</button>
      </div>
     
   
