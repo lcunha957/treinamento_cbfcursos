@@ -29,10 +29,6 @@ else{
   
 }
 
-const filteredData = APIData.filter((item) => {
-    return Object.values(item).join('').toLowerCase().includes(searchInput.toLowerCase())
-    })
-
     return (
         <div style={{ padding: 20 }}>
             <Input icon='search'
