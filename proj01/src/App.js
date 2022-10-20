@@ -4,6 +4,7 @@ import Corpo from '../src/componentes/Corpo';
 import Relogio from "./componentes/Relogio";
 import Numero from "./componentes/Numero";
 import Gato from "./componentes/Gato";
+import Posts from "./componentes/Posts";
 //import Formulario from ".componentes/Formulario";
 function App() {
  const [num, setNum] = useState(10);
@@ -86,8 +87,9 @@ return(
        <Numero num={num} setNum={setNum}/>  
        <p>Contagem{contagem}</p>
        <button onClick={() => setContagem(contagem + 1)}>Contar</button>
+       <Posts/>
      </div>
-    
+
   
 )
   
