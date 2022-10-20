@@ -4,7 +4,7 @@ import Corpo from '../src/componentes/Corpo';
 import Relogio from "./componentes/Relogio";
 import Numero from "./componentes/Numero";
 import Gato from "./componentes/Gato";
-import Posts from "./componentes/Posts";
+import Posts from "../src/Posts";
 //import Formulario from ".componentes/Formulario";
 function App() {
  const [num, setNum] = useState(10);
